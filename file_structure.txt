@@ -1,0 +1,38 @@
+MyProject/
+├── CMakeLists.txt               # Top-level CMake file
+├── README.md                    # Project documentation
+├── .gitignore                   # Ignore build, binaries, etc.
+├── build/                       # CMake build folder (empty, ignored in Git)
+│
+├── include/                     # Public headers
+│   └── myproject/               # Project namespace (matches project name)
+│       ├── core/
+│       │   ├── Engine.h
+│       │   └── Component.h
+│       ├── utils/
+│       │   ├── Logger.h
+│       │   └── MathUtils.h
+│       └── ui/
+│           ├── Button.h
+│           └── Window.h
+│
+├── src/                         # Source files (implementation)
+│   ├── main.cpp                 # Program entry point
+│   ├── core/
+│   │   ├── Engine.cpp
+│   │   └── Component.cpp
+│   ├── utils/
+│   │   ├── Logger.cpp
+│   │   └── MathUtils.cpp
+│   └── ui/
+│       ├── Button.cpp
+│       └── Window.cpp
+│
+├── tests/                       # Unit tests (optional)
+│   ├── CMakeLists.txt
+│   ├── test_main.cpp
+│   └── test_Engine.cpp
+│
+└── lib/                         # Optional third-party libraries
+    └── some_lib/
+

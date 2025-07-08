@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/blackjack.dir/src/core/Card.cpp.o CMakeFiles/blackjack.dir/src/core/Deck.cpp.o CMakeFiles/blackjack.dir/src/main.cpp.o -o blackjack
