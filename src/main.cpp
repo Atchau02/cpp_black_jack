@@ -1,15 +1,14 @@
 #include "blackjack/core/Deck.h"
 
-int main(){
-    using namespace blackjack;
+int main() {
+  using namespace blackjack;
 
-    Deck deck;
+  Deck deck;
 
-    Card card = deck.draw();
+  Card card = deck.draw();
 
-    std::cout << "Your card is: " << card.toString() << '\n';
+  std::cout << "Your card is: " << card.toString() << '\n';
+  deck.printDeck();
 
-    deck.printDeck();
-
-    return 0;
+  return 0;
 }
