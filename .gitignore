@@ -1,41 +1,60 @@
-# Prerequisites
-*.d
+# CMake build directory
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
 
-# Compiled Object files
-*.slo
-*.lo
+# Object and binary files
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
+*.lo
+*.slo
 *.a
 *.lib
-
-# Executables
+*.lai
+*.la
+*.so
+*.so.*
+*.dylib
+*.dll
 *.exe
 *.out
 *.app
 
-# debug information files
+# Debug and intermediate files
+*.gch
+*.pch
 *.dwo
+*.ilk
+*.pdb
+
+# Fortran module files (if used)
+*.mod
+*.smod
+
+# Neovim swap/undo/backup files
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+*.un~
+*~
+.session
+.netrwhist
+
+# ctags/tags
+*.tags
+*.tags.temp
+
+# OS-specific files
+.DS_Store       # macOS
+Thumbs.db       # Windows
+ehthumbs.db     # Windows
+
+# Other common folders to ignore
+.cache/
+.idea/
+.vscode/
+ 

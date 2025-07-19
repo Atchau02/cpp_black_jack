@@ -4,32 +4,32 @@
 #include <vector>
 
 #include <algorithm>
-#include <random>
 #include <chrono>
+#include <random>
 
 #include <iostream>
 
 #include "blackjack/core/Card.h"
 
-namespace blackjack{
+namespace blackjack {
 
-    class Deck {
-    private:
-       std::vector<blackjack::Card>  cards_;
-       std::mt19937 rng_;   
+class Deck {
+private:
+  std::vector<blackjack::Card> cards_;
+  std::mt19937 rng_;
 
-        void initializeDeck();
+  void initializeDeck();
 
-    public:
-        Deck();
+public:
+  Deck();
 
-        Card draw();
-        size_t size() const;
+  Card draw();
+  size_t size() const;
 
-        void shuffle();
-        void reset();
-        bool isEmpty() const;
-        void printDeck() const;
-    };
+  void shuffle();
+  void reset();
+  bool isEmpty() const;
+  void printDeck() const;
+};
 
-}
+} // namespace blackjack
