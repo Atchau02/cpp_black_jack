@@ -7,8 +7,7 @@ int main() {
 
   Card card = deck.draw();
 
-  std::cout << "Your card is: " << card.toString() << '\n';
-  deck.printDeck();
+  std::cout << "Your card is: " << card.toString();
 
   return 0;
 }
